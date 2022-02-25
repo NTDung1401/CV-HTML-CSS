@@ -1,0 +1,135 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css');
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.container {
+    margin: 50px 25% 0 25%;
+    font-family: robotocondensed, Arial, sans-serif;
+    height: 100%;
+    position: relative;
+}
+.cv {
+    /* width: 210mm; */
+    height: 297mm;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+}
+
+.group-left {
+    background-color: #333333;
+    float: left;
+    min-height: 560px;
+    padding: 15px;
+}
+
+.group-right {
+    background-color: #EDEDED;
+    float: right;
+    min-height: 560px;
+}
+
+.group-header {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    background-color: #548CA8;
+    min-height: 130px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+}
+
+.group-name {
+    display: block;
+    color: #EDEDED;
+}
+
+.name-info {
+    padding: 25px 25px 0px 25px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.job-info {
+    padding: 10px 25px 0px 25px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.group-avatar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: black;
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    z-index: 1;
+    border: 5px solid #fff;
+    background-size: cover;
+}
+
+.group-contact {
+    margin: 200px 20px 20px 0px;
+    color: #EDEDED;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+    padding: 3px 0px;
+}
+
+.breakline {
+    height: 1px;
+    background-color: #EDEDED;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.group-skills {
+    color: #EDEDED;
+}
+
+.group-title {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.skill-title::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #fff;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 1px;
+}
+
+.skill-content {
+    font-size: 14px;
+}
+
+.right-block-content {
+    margin: 200px 20px 20px 0px;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.right-block-title::after {
+    height: 2px;
+    width: 100%;
+    background-color: #333333;
+    margin-left: 15px;
+}
+
