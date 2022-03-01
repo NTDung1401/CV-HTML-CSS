@@ -3,26 +3,44 @@
 
 .container {
     margin: auto;
-    margin: 50px 25% 20px 20%;
+    margin: 50px 25% 20px 25%;
     font-family: robotocondensed, Arial, sans-serif;
     height: 100%;
     position: relative;
 }
 
+@media only screen and (max-width: 1020px) {
+    .container {
+        margin: 50px 10% 20px 10%;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .container {
+        margin: 50px 27% 20px 27%;
+    }
+}
+
 .cv-body {
-    /* width: 210mm; */
     min-height: 280mm;
     max-width: 980px;
+    min-width: 620px;
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 5fr 7fr;
+}
+
+@media only screen and (min-width: 1850px) {
+    .cv-body {
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+    }
 }
 
 .group-left {
-    /* background-color: #333333; */
     background-color: #3c3c3c;
     float: left;
     min-height: 560px;
-    padding: 15px;
+    padding: 10px;
     line-height: 1.6;
 }
 
@@ -39,7 +57,7 @@
     background-color: #548CA8;
     min-height: 130px;
     width: 100%;
-    min-width: 595px;
+    min-width: 620px;
     max-width: 980px;
     display: grid;
     grid-template-columns: 8fr 4fr;
@@ -64,7 +82,6 @@
 
 .group-avatar {
     position: absolute;
-    /* top: 20px; */
     top: -20px;
     right: 30px;
     height: 160px;
@@ -80,6 +97,7 @@
     color: #EDEDED;
     font-size: 15px;
     font-weight: 700;
+    width: fit-content;
 }
 
 .contact-item {
@@ -89,6 +107,16 @@
 
 .contact-item-content {
     margin-left: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .contact-item-content {
+        margin-left: 10px;
+    }
+
+    .group-contact {
+        margin-right: 0px;
+    }
 }
 
 .breakline {
@@ -103,7 +131,7 @@
 }
 
 .group-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     display: inline-block;
     margin-bottom: 15px;
@@ -154,6 +182,7 @@
     width: fit-content;
     background-color: #EDEDED;
     padding-right: 20px;
+    font-size: 18px;
 }
 
 .right-block-item-title::after {
